@@ -6,20 +6,20 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     # default response for Get method
-    text = 'Flask API example version 0.2.0'
+    text = 'Flask API example version 0.3.0'
     if request.method == 'POST':
         # get text from form
         text = request.form.get('sometext')
         print(text)
         # format as json for api call
-        data = {"sometext": text}
+        data = {"message": text}
         try:
             # call the api
             if text == '':
-                response = requests.get('http://localhost:5000/api')
+                response = requests.get('https://us-central1-<project>.cloudfunctions.net/function-1')
                 text = response.text
             else:
-                response = requests.post('http://localhost:5000/api', json=data)
+                response = requests.post('https://us-central1-<project>.cloudfunctions.net/function-1', json=data)
                 text = response.text
         except:
             text = 'API call failed'

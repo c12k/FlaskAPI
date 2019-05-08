@@ -9,9 +9,12 @@ def index():
     text = 'Flask API example version 0.1.0'
     if request.method == 'POST':
         # call the api
-        response = requests.get('http://localhost:5000')
-        # get the api response output
-        text = response.text
+        try:
+            response = requests.get('http://localhost:5000')
+            # get the api response output
+            text = response.text
+        except:
+            text = 'API call failed'
     return render_template('index1.html', output=text)
 
 if __name__ == "__main__":
