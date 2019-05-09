@@ -4,9 +4,7 @@ API Training example
 
 ## Context for this example
 
-- why API's
-  - component design
-  - mono-lith vs microservices 
+- presentation link <https://docs.google.com/presentation/d/1_EYQG7vnZ1it93h2X80REfLTjgMAv1z9mcp4cw4sWZo/edit?usp=sharing>
 
 ## Assumptions
 
