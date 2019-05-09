@@ -16,10 +16,10 @@ def index():
         try:
             # call the api
             if text == '':
-                response = requests.get('https://us-central1-<project>.cloudfunctions.net/function-1')
+                response = requests.get('https://us-central1-just-aloe-231800.cloudfunctions.net/function-1')
                 text = response.text
             else:
-                response = requests.post('https://us-central1-<project>.cloudfunctions.net/function-1', json=data)
+                response = requests.post('https://us-central1-just-aloe-231800.cloudfunctions.net/function-1', json=data)
                 text = response.text
         except:
             text = 'API call failed'

@@ -58,4 +58,4 @@ API Training example
 - Flask Restful library <https://flask-restful.readthedocs.io/en/latest/>
 - alternatives to flask restful (google FlaskAPI, Django, GraphQL)
 - Note that in Flask Restful reqparse is deprecated <https://flask-restful.readthedocs.io/en/0.3.6/reqparse.html> and they suggest using <https://marshmallow.readthedocs.io/en/3.0/>
-- cloud serverless api's <https://aws.amazon.com/lambda/> <https://cloud.google.com/functions/>
+- cloud serverless api's <https://serverless.com/> <https://aws.amazon.com/lambda/> <https://cloud.google.com/functions/>
