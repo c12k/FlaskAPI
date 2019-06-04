@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 api = Api(app)
 parser = reqparse.RequestParser()
-parser.add_argument("sometext", type=str, help="Enter some text to pass to API")
+parser.add_argument("sometext", type=str)
 
 
 class health(Resource):

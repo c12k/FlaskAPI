@@ -24,9 +24,9 @@ API Training example
 
 ### example 1 - simple API creation and call
 
-- in another terminal run `python test1.py`
+- in a terminal run `python test1.py`
 - in a browser go to `localhost` click the call api button (it fails)
-- in a terminal run `python app1.py`
+- in another terminal run `python app1.py`
 - in a browser go to `localhost:5000` check that api is healthy
 - in a browser go to `localhost` click the call api button (it returns api response)
 
@@ -39,9 +39,16 @@ API Training example
 
 ### example 3 - google cloud function as an api
 
-- setup: get a cloud trial account; go to default project; enable billing; enable cloud functions api
+- setup:
+    - get a google cloud trial account
+    - go to default project
+    - enable billing
+    - enable cloud functions api
 - go to cloud functions
-- modify the default python function and click create
+- modify the default python function
+    - select python 3.7 as the runtime
+    - modify the function to do something useful
+    - click create
 - test it in a browser or postman
 - copy the url to test3.py code
 - in a terminal run `python test3.py`
